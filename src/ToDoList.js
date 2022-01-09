@@ -6,22 +6,6 @@ import empty from './empty.png';
 
 let iconArray = [cross, done, empty];
 
-/*
-let litest = document.querySelectorAll('.icon');
-
-litest.forEach( (index) => {
-    index.addEventListener("click", (c)=> { 
-        c++;
-            if (c>iconArray.length-1) {
-                c=0
-            }
-        document.querySelector('.icon').src=iconArray[c];
-    });
-});
-*/
-
-
-
 export class ToDoList extends Component {
 
     state = {
@@ -52,38 +36,12 @@ export class ToDoList extends Component {
         li.classList.toggle('crossed');
     }
 
-
     crosseImg = (event) => {
         const img = event.target;
-
         let isActive = this.state.icon === done ? cross : done;
         this.setState({icon: isActive});
-        //  ic.innerHTML =  cross ;
         console.log("cross")
     }
-
-    
-    
-    iconChange = () => {
-       // const iicon = i.target;
-        this.setState({icon: cross});
-
-        /*
-        let iconArray = [cross, done, empty];
-
-            let b=0;
-            b++;
-            if (b > iconArray.length-1) {
-            b=0
-            };
-
-            this.setState({icon: iconArray[b]});
-        }
-        */
-        //);
-
-       }
-    
 
     iconDone = (i) => {
         const iicon = i.target;
@@ -117,16 +75,8 @@ export class ToDoList extends Component {
                 {this.state.toDoList.map((item, index) => (
                         <li 
                         onClick={ this.crosseWord } 
-                      // onClick={this.crosseImg.bind(this, index)}
-                        key={ index }
-                       // className={this.state.active === index ? 'active' : ''}
-                       >
+                        key={ index }>
                             <img className='icon' 
-                            
-                            //onClick={ this.iconChange }  
-                            //onDoubleClick={ this.iconDone } 
-                           // onClick={ this.crosseImg.bind(this, index) }
-                         //  onClick={ this.crosseImg }
                             src={ this.state.icon } 
                             width="20px"  alt='icon'/>
                             {item} 
@@ -142,8 +92,6 @@ export class ToDoList extends Component {
 
                 </div>
             </form>
-
         )
     }
-
 }

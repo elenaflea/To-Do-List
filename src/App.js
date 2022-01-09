@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from './logo.png'
+import mylogo from './mylogo.png'
+import { ToDoList } from './ToDoList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <div className='back'>
+        <img className='App-logo' src= { logo }  alt="logo"/>
+        <h1>TO-DO LIST</h1>
+        <ToDoList />
+        <a href='https://grondin.glitch.me/' target="_blank">
+        <img className='myIcon' src={mylogo} alt="logo"/>
         </a>
-      </header>
+        
+      </div>
     </div>
   );
 }

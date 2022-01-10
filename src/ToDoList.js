@@ -4,7 +4,7 @@ import done from './done.png';
 import cross from './cross.png';
 import empty from './empty.png';
 
-let iconArray = [cross, done, empty];
+// let iconArray = [cross, done, empty];
 
 export class ToDoList extends Component {
 
@@ -37,14 +37,14 @@ export class ToDoList extends Component {
     }
 
     crosseImg = (event) => {
-        const img = event.target;
+       // const img = event.target;
         let isActive = this.state.icon === done ? cross : done;
         this.setState({icon: isActive});
         console.log("cross")
     }
 
     iconDone = (i) => {
-        const iicon = i.target;
+      //  const iicon = i.target;
         this.setState({icon: done});
     }
 

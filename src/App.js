@@ -10,7 +10,7 @@ function App() {
         <img className='App-logo' src= { logo }  alt="logo"/>
         <h1>TO-DO LIST</h1>
         <ToDoList />
-        <a href='https://grondin.glitch.me/' target="_blank">
+        <a href='https://grondin.glitch.me/' target="_blank" rel="noreferrer">
         <img className='myIcon' src={mylogo} alt="logo"/>
         </a>
         

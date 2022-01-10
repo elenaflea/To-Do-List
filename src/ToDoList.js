@@ -12,7 +12,7 @@ export class ToDoList extends Component {
         userInput : '',
         toDoList : [],
         icon : done,
-        active: null
+      //  active: null
     }
 
     handleSubmit (e) {
@@ -36,12 +36,12 @@ export class ToDoList extends Component {
         li.classList.toggle('crossed');
     }
 
-    crosseImg = (event) => {
+   // crosseImg = (event) => {
        // const img = event.target;
-        let isActive = this.state.icon === done ? cross : done;
-        this.setState({icon: isActive});
-        console.log("cross")
-    }
+      //  let isActive = this.state.icon === done ? cross : done;
+      //  this.setState({icon: isActive});
+     //   console.log("cross")
+   // }
 
     iconDone = (i) => {
       //  const iicon = i.target;

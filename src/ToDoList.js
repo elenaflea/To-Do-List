@@ -2,7 +2,7 @@ import './App.css';
 import { Component } from 'react';
 import done from './done.png';
 import cross from './cross.png';
-import empty from './empty.png';
+// import empty from './empty.png';
 
 // let iconArray = [cross, done, empty];
 

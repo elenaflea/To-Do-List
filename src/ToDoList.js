@@ -74,7 +74,7 @@ export class ToDoList extends Component {
                 <ul>
                 {this.state.toDoList.map((item, index) => (
                         <li 
-                        onClick={ javascript:this.crosseWord } 
+                        onClick={ this.crosseWord } 
                         key={ index }>
                             <img className='icon' 
                             src={ this.state.icon } 

@@ -66,7 +66,7 @@ export class ToDoList extends Component {
                     value = {this.state.userInput} />
                 </div>
                 <div>
-                    <button className='btn addBtn' onChange={ ()=> this.addList(this.state.userInput)}>
+                    <button className='btn addBtn' onClick={ ()=> this.addList(this.state.userInput)}>
                         Add
                     </button>
                 </div>
@@ -74,7 +74,7 @@ export class ToDoList extends Component {
                 <ul>
                 {this.state.toDoList.map((item, index) => (
                         <li 
-                        onClick={ this.crosseWord } 
+                        onChange={ this.crosseWord } 
                         key={ index }>
                             <img className='icon' 
                             src={ this.state.icon } 

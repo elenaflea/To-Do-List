@@ -66,7 +66,7 @@ export class ToDoList extends Component {
                     value = {this.state.userInput} />
                 </div>
                 <div>
-                    <button className='btn addBtn' onClick={ ()=> this.addList(this.state.userInput)}>
+                    <button className='btn addBtn' onChange={ ()=> this.addList(this.state.userInput)}>
                         Add
                     </button>
                 </div>

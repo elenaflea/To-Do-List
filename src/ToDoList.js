@@ -31,8 +31,8 @@ export class ToDoList extends Component {
         }
     }
 
-    crosseWord = (e) => {
-        const li = e.target;
+    crosseWord = (event) => {
+        const li = event.target;
         li.classList.toggle('crossed');
     }
 
@@ -74,7 +74,7 @@ export class ToDoList extends Component {
                 <ul>
                 {this.state.toDoList.map((item, index) => (
                         <li 
-                        onChange={ (e) => this.crosseWord } 
+                        onClick={ this.crosseWord } 
                         key={ index }>
                             <img className='icon' 
                             src={ this.state.icon } 

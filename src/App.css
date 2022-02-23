@@ -89,23 +89,18 @@ li{
   margin: 0px 50px;
 }
 .crossed{
- // text-decoration: line-through 2px #fafafa;
-//  -webkit-text-decoration: line-through 2px #fafafa;
-//  -moz-text-decoration: line-through 2px #fafafa;
-//   -ms-text-decoration: line-through 2px #fafafa;
    text-decoration: line-through;
   text-decoration-thickness: 2px;
-  text-decoration-color: #de3b3b;
+  text-decoration-color: #fafafa;
   -webkit-text-decoration: line-through;
   -webkit-text-decoration-thickness: 2px;
-  -webkit-text-decoration-color: #de3b3b;
+  -webkit-text-decoration-color: #fafafa;
   -moz-text-decoration: line-through;
   -moz-text-decoration-thickness: 2px;
-  -moz-text-decoration-color: #de3b3b;
+  -moz-text-decoration-color: #fafafa;
   -ms-text-decoration: line-through;
   -ms-text-decoration-thickness: 2px;
-  -ms-text-decoration-color: #de3b3b;
-  
+  -ms-text-decoration-color: #fafafa;
 }
 ul, li{
   list-style-type: none;

@@ -90,6 +90,7 @@ li{
 }
 .crossed{
   text-decoration: line-through 2px #fafafa;
+  webkit-user-select: none;
 }
 ul, li{
   list-style-type: none;
